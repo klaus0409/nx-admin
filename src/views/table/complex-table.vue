@@ -125,6 +125,10 @@ export default {
   methods: {
     // 性别显示转换
     formatSex: function(row, column) {
+      var now = new Date().getTime()
+      // var m = this.$moment(now).format('YYYY-MM-DD hh:mm:ss')
+      var m = util.formatDate.format(new Date(now), 'yyyy-MM-dd')
+      console.log(m)
       return row.sex === 1 ? '男' : row.sex === 0 ? '女' : '未知'
     },
     handleCurrentChange(val) {

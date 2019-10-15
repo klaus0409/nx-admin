@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 import VCharts from 'v-charts'
-
+Vue.use(require('vue-moment'))
 // 地图
 import BaiduMap from 'vue-baidu-map'
 import ElementUI from 'element-ui'
